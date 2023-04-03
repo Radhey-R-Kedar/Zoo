@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+  background-color: rgb(248, 238, 220);
+}
+
+/* For sustom scrollbar start */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(238, 181, 75);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For sustom scrollbar end */
+
+.background-image {
+  background-image: url("images/background3.jpg");
+  width: 100%;
+  height: 45rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: top;
+  position: fixed;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  height: 4rem;
+  width: 100%;
+  z-index: 1000;
+  top: 0px;
+  background-color: wheat;
+  backdrop-filter: blur(0.3rem);
+  padding-top: 0.5rem;
+  box-shadow: 2px 2px 4px black;
+}
+
+
+.allContent {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.mainContentbar {
+  width: 20%;
+  height: 100%;
+}
+
+.mainContent {
+  width: 100%;
+  height: auto;
+  border: 2px solad black;
+  justify-content: center;
+  overflow: auto;
+  margin-bottom: 4rem;
+  scroll-behavior: smooth;
+}
+
+.heading {
+  justify-content: center;
+  margin-left: 3rem;
+  font-size: larger;
+}
+
+.navbar-content {
+  text-align: center;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+
+.navbar-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.navbar-content ul li {
+  margin-right: 3rem;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+  padding-top: 0.5rem;
+}
+
+
+.navbar-content ul li a {
+  color: black;
+}
+
+.navbar-content ul li :hover {
+  z-index: 100;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+.loginform {
+  z-index: 2;
+  justify-content: center;
+  width: 85%;
+  background: rgb(245, 222, 179);
+  margin-top: 4rem;
+  height: 92vh;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  position: absolute;
+  display: flex;
+}
+
+.loginFormImage {
+  width: 60%;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.loginFormImage h2{
+  margin-top: 27%;
+  font-size: 3rem;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.loginFormImage h1{
+  font-size: 5rem;
+}
+
+.loginFormContent {
+  width: 40%;
+  padding: 1rem;
+}
+
+.cut {
+  height: 1.2rem;
+  width: 1.2rem;
+  padding: 0.01rem;
+  float: right;
+  top: 0;
+  font-size: larger;
+  justify-content: center;
+  text-align: center;
+}
+
+.cut img{
+  top: 0;
+  background-color: wheat;
+}
+
+.loginform form {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 35%; */
+}
+
+.loginform form h2 {
+  margin: 1rem;
+  margin-top: 0;
+  font-size: xx-large;
+}
+
+.loginform form .input {
+  margin: 0.5rem;
+  border: 2px solid black;
+  padding: 0.5rem;
+  background: transparent;
+  border-radius: 0.3rem;
+  height: 2.5rem;
+  width: 80%;
+  color: black;
+}
+
+.loginbutton {
+  margin: 0.5rem;
+  border: 2px solid black;
+  width: 50%;
+  height: 2.5rem;
+  padding: 0.2rem;
+  background: login;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgb(142, 211, 86);
+}
+
+.googleloginbutton {
+  margin: 0.3rem;
+  border: 2px solid black;
+  width: 80%;
+  padding: 0.2rem;
+  background: rgb(84, 179, 235);
+  border-radius: 0.3rem;
+  height: 2.5rem;
+}
+
+.contentbar {
+  background-color: wheat;
+  width: 100%;
+  padding: 1rem;
+  padding-left: 0.3rem;
+  float: left;
+  height: 99%;
+}
+
+@media only screen and (max-width:768px){
+  .loginform {
+    z-index: 2;
+    justify-content: center;
+    width: 85%;
+    background: rgb(245, 222, 179);
+    margin-top: 4rem;
+    height: 92vh;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginFormImage {
+    display: none;
+  }
+  
+  .loginFormImage h2{
+    display: none;
+  }
+  
+  .loginFormImage h1{
+    display: none;
+  }
+
+  .loginFormContent {
+    width: 50%;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 0.5px;
+    margin-left: 25%;
+  }
+}
+
+.searchbar {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  text-align: center;
+  width: 100%;
+  background-color: aliceblue;
+  margin-bottom: 0.6rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar button {
+  float: right;
+  background-color: azure;
+}
+
+.searchbar button :hover {
+  z-index: 100;
+}
+
+.searchbar input {
+  width: 95%;
+  margin-right: 0.1rem;
+}
+
+.contenrBarItems {
+  min-height: auto;
+  max-height: 85%;
+  background-color: wheat;
+  overflow: auto;
+}
+
+.listWindow {
+  margin: 0.2rem;
+  z-index: -100;
+}
+
+.listWindowItems button {
+  display: flex;
+  background-color: wheat;
+  cursor: pointer;
+  font-size: large;
+  width: 100%;
+}
+
+.listWindowItems button:hover {
+  background-color: rgb(217, 199, 164);
+}
+
+.img {
+  background: transparent;
+  margin-top: 2px;
+  margin-right: 0.4rem;
+}
+
+.listItemContent ul li {
+  margin-left: 2.4rem;
+  margin-top: 0.2px;
+}
+
+.listItemContent ul li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+
+.animalInfo {
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 2rem;
+  min-height: 20rem;
+  max-height: 33rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.animalImage {
+  width: 60%;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 1rem;
+}
+
+.animalInformation {
+  background-color: wheat;
+  width: 40%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 0.6rem;
+}
+
+.allInfoPoints {
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.info {
+  padding: 0.3rem;
+  margin: 0.3rem;
+}
+
+.info p {
+  padding-left: 0.8rem;
+}
+
+
+@media only screen and (max-width:768px){
+  .animalInfo {
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 2rem;
+    min-height: 20rem;
+    max-height: 34rem;
+    width: auto;
+    display: block;
+  }
+  
+  .animalImage {
+   min-height: 16rem;
+   max-height: 17rem;
+    width: auto;
+    background-size: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1rem;
+  }
+  
+  .animalInformation {
+    background-color: wheat;
+    min-height: 8rem;
+    max-height: 17rem;
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .allInfoPoints {
+    min-height: 6rem;
+    max-height: 15rem;
+    overflow: auto;
+    scroll-behavior: smooth;
+    justify-content: center;
+  }
+
+  .info {
+    padding: 0.3rem;
+    margin: 0.3rem;
+  }
+  
+  .info p {
+    padding-left: 0.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .navContent{
+    margin-left: 100%;
+  }
+
+  .navContent1{
+    margin-left: 73%;
+  }
+
+  .navbar-content1 {
+    width: 25%;
+    position: absolute;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    transition: .1s linear;
+    margin-right: 2px;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    text-align: center;
+    background-color: antiquewhite;
+  }
+
+  .navbar-content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  .navbar-content ul li {
+    justify-content: center;
+    text-align: center;
+    font-size: small;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: .2rem;
+  }
+  
+  .contentBtn{
+    border: 2px solid black;
+    border-radius: .5rem;
+    width: 2rem;
+    height: 2rem;
+    margin-top: .4rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .line{
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (max-width:768px){
+  .allContent {
+    margin-top: 4rem;
+    display: flex;
+  flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed ;
+  }
+
+  .mainContentbar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contentbar {
+    background-color: wheat;
+    width: 100%;
+    padding: .4rem;
+    padding-left: 0.3rem;
+    float: left;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchbar {
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    margin: .1rem;
+    margin-bottom: .2rem;
+    padding: 0.2rem;
+    text-align: center;
+    width: 100%;
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenrBarItems {
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .listWindow {
+    width: 10rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    z-index: 0;
+    font-size: .7rem;
+  }
+
+  .animalName{
+    font-size: .9rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .listItemContent {
+    position: fixed;
+    border: 2px solid black;
+    border-radius: .4rem;
+    padding: .4rem;
+    height: 40%; 
+    background-color: rgb(246, 234, 212);
+    margin-left: 0;
+  }
+
+  .listItemContent ul{
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 100%; 
+  }
+
+
+  .listItemContent ul li {
+    margin-left: 1rem;
+    margin-right: .5rem;
+    margin-top: 0.3px;
+  }
+  
+
+}
+
