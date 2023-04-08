@@ -1,7 +1,8 @@
+import "./App.css";
 import React, {useState} from 'react';
-import MainContent from './MainContent';
-import Navbar from './Navbar';
-import LoginForm from './LoginForm';
+import MainContent from './components/MainContent';
+import Navbar from './components/Navbar';
+import LoginForm from './components/LoginForm';
 
 
 function App() {

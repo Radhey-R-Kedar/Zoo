@@ -6,7 +6,7 @@ function AnimalInfo() {
     <div className="animalInfo">
       <div
         className="animalImage"
-        style={{ backgroundImage: "url(images/background1.jpg)" }}
+        style={{ backgroundImage: "url(../public/images/background1.jpg)" }}
       >
         <h2>Name</h2>
       </div>
