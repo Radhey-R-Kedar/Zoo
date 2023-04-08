@@ -12,16 +12,7 @@ function MainContent() {
       <div className="mainContent">
         <AnimalInfo/>
         <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
-        <AnimalInfo/>
+      
       </div>
     </div>
   );

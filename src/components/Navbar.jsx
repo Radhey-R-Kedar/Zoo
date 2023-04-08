@@ -24,8 +24,8 @@ function Navbar(props){
               <ul>
                 <li><a id="home" href="/">Home</a></li>
                 <li><a id="contact-us" href="/">Contact-us</a></li>
-                <li><a href="#" name="login" id="login" onClick={props.onButtonClick}>Login</a></li>
-                <li><a href="#" name="signUp" id="signUp" onClick={props.onButtonClick}>SignUp</a></li>
+                <li><button  name="login" id="login" onClick={props.onButtonClick}>Login</button></li>
+                <li><button  name="signUp" id="signUp" onClick={props.onButtonClick}>SignUp</button></li>
               </ul>
               </div>
               
